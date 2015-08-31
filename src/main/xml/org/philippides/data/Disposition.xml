@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<type name="disposition" class="composite" source="list" provides="frame">
+<descriptor name="amqp:disposition:list" code="0x00000000:0x00000015"/>
+<field name="role" type="role" mandatory="true"/>
+<field name="first" type="delivery-number" mandatory="true"/>
+<field name="last" type="delivery-number"/>
+<field name="settled" type="boolean" default="false"/>
+<field name="state" type="*" requires="delivery-state"/>
+<field name="batchable" type="boolean" default="false"/>
+</type>

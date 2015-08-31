@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<type name="accepted" class="composite" source="list" provides="delivery-state, outcome">
+<descriptor name="amqp:accepted:list" code="0x00000000:0x00000024"/>
+</type>

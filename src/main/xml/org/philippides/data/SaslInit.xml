@@ -1,0 +1,6 @@
+<type name="sasl-init" class="composite" source="list" provides="sasl-frame">
+    <descriptor name="amqp:sasl-init:list" code="0x00000000:0x00000041"/>
+    <field name="mechanism" type="symbol" mandatory="true"/>
+    <field name="initial-response" type="binary"/>
+    <field name="hostname" type="string"/>
+</type>

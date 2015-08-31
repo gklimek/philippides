@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<type name="close" class="composite" source="list" provides="frame">
+<descriptor name="amqp:close:list" code="0x00000000:0x00000018"/>
+<field name="error" type="error"/>
+</type>

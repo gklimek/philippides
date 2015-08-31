@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<type name="sasl-outcome" class="composite" source="list" provides="sasl-frame">
+<descriptor name="amqp:sasl-outcome:list" code="0x00000000:0x00000044"/>
+<field name="code" type="sasl-code" mandatory="true"/>
+<field name="additional-data" type="binary"/>
+</type>

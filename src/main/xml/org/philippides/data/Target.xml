@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<type name="target" class="composite" source="list" provides="target">
+<descriptor name="amqp:target:list" code="0x00000000:0x00000029"/>
+<field name="address" type="*" requires="address"/>
+<field name="durable" type="terminus-durability" default="none"/>
+<field name="expiry-policy" type="terminus-expiry-policy" default="session-end"/>
+<field name="timeout" type="seconds" default="0"/>
+<field name="dynamic" type="boolean" default="false"/>
+<field name="dynamic-node-properties" type="node-properties"/>
+<field name="capabilities" type="symbol" multiple="true"/>
+</type>

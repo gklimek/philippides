@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<type name="attach" class="composite" source="list" provides="frame">
+<descriptor name="amqp:attach:list" code="0x00000000:0x00000012"/>
+<field name="name" type="string" mandatory="true"/>
+<field name="handle" type="handle" mandatory="true"/>
+<field name="role" type="role" mandatory="true"/>
+<field name="snd-settle-mode" type="sender-settle-mode" default="mixed"/>
+<field name="rcv-settle-mode" type="receiver-settle-mode" default="first"/>
+<field name="source" type="*" requires="source"/>
+<field name="target" type="*" requires="target"/>
+<field name="unsettled" type="map"/>
+<field name="incomplete-unsettled" type="boolean" default="false"/>
+<field name="initial-delivery-count" type="sequence-no"/>
+<field name="max-message-size" type="ulong"/>
+<field name="offered-capabilities" type="symbol" multiple="true"/>
+<field name="desired-capabilities" type="symbol" multiple="true"/>
+<field name="properties" type="fields"/>
+</type>
